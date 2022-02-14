@@ -32,5 +32,6 @@ The kinetics model of tungsten’s oxidation basically takes the database built 
 
 
 ## Challenge we ran into
+In the most general case the oxidation of metallic tungsten will evolve into a structure characterized by five distinct layers. These layers represent different tungsten-oxygen structures ranging from WO3 on the environment side (where O radicals are produced) to the W-O metallic solid solutions (where the metal is reduced). In between, three more oxide phases are expected to form, namely, WO2.9, WO2.72, and WO2.
 
 
