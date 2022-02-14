@@ -28,6 +28,7 @@ The kinetics model of tungsten’s oxidation basically takes the database built 
 
 ## How we built it
 • Built a package with Object Oriented Design for: PDE solver, interface tracker, curve fitter, etc., and wrote 1000+ lines Java code.
+
 • Created 100+ lines of shell scripts for the model and provided 100+ data points, mitigated the lack of references in the research field.
 
 
