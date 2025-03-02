@@ -17,7 +17,7 @@ layout: page
 
 
 
-## Inspiration
+##
 
 ----------------------
 This project focuses on the oxidation of tungsten. The rate constant of oxidation contains the implicit information about the parameters like the unit cell type, atmosphere, molecular electronic properties, oxidation temperature, time, oxidation conditions, alloy composition. There are many papers that discuss W0s oxidation process, and categorized data are also provided like temperature, time duration, growth conditions(like O2 concentration ), constituent phase etc. These datas can be constructed into a data set and will be nice to do a machine learning model. Using existing ML algorithms, it will be feasible to predict the parabolic rate constant of the oxidation process.
