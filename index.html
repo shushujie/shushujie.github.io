@@ -1,17 +1,458 @@
----
----
-<!DOCTYPE html>
-<html lang="en">
-{% include header.html %}
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en-gb" class="no-js">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--[if lt IE 9]> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+<title>ME – Resume and Personal Portfolio</title>
+<meta name="description" content="">
+<meta name="author" content="WebThemez">
+<!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!--[if lte IE 8]>
+		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
+	<![endif]-->
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/da-slider.css" />
+<link rel="stylesheet" href="css/styles.css" />
+<!-- Font Awesome -->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+</head>
 
 <body>
-    {% include navbar.html %}
+<header class="header">
+  <div class="container">
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a href="#" class="navbar-brand scroll-top logo"><b>Me..</b></a> </div>
+      <!--/.navbar-header-->
+      <div id="main-nav" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav" id="mainNav">
+          <li class="active"><a href="#home" class="scroll-link">Home</a></li>
+          <li><a href="#aboutUs" class="scroll-link">About Me</a></li>
+          <li><a href="#skills" class="scroll-link">Skills</a></li>
+          <li><a href="#experience" class="scroll-link">Experience</a></li>
+          <li><a href="#portfolio" class="scroll-link">Portfolio</a></li>
+          <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
+        </ul>
+      </div>
+      <!--/.navbar-collapse--> 
+    </nav>
+    <!--/.navbar--> 
+  </div>
+  <!--/.container--> 
+</header>
+<!--/.header-->
+<div id="#top"></div>
+<section id="home">
+  <div class="banner-container"> <img src="images/banner-bg.jpg" alt="banner" />
+    <div class="container banner-content">
+      <div class="heroText">
+        <h2><span>HEllo, I'm</span><br>
+          Shu Huang</h2>
+          <!-- <span class="caption">Computational Science Researcher</span> </div> -->
+    </div>
+  </div>
+</section>
+<section id="introText">
+  <div class="container">
+    <div>
+      <h1>I dive deep in Computational Science and code a lot</h1>
+      <p>I work with Professor Marian when I was a Ph.D. student and has been investigated in various modeling problems.</p>
+    </div>
+  </div>
+</section>
+<!--About-->
+<section id="aboutUs">
+  <div class="container">
+    <div class="row"> 
+      <!-- item -->
+      <!-- <div class="col-md-4 tileBox"> <img src="images/photo-1.jpg" alt="me"/> </div> -->
+      <div class="col-md-8 tileBox">
+        <div class="txtHead">
+          <h2>I am Shu Huang, Ph.D.</h2>
+          <h3> Computational Science Researcher And Software Developer Based in Bay Area, CA USA.</h3>
+        </div>
+        <p>I love to explore the physical mechanisms behind material phenomena. But I also use machine learning to let data speak. In UCLA, I worked on multi-scale modeling, fusion energy research, and advanced simulations for materials behavior.<br/>
+          <br/>
+          I design and implemente data-driven modeling solutions. I'm passionate about using computational techniques like Kinetic Monte Carlo, Ab Initio etc. to solve real-world problems. I also enjoy coding in Java, Python, exploring new technologies, and applying machine learning to materials science.</p>
+      </div>
+      <div class="col-md-4 tileBox"> <img src="images/photo-1.jpg" alt="me"/> </div>
 
-    {% include profile.html %}
-    
-    {% include description.html %}
-    
-    {% include projects.html %}
+      <!-- end: --> 
+    </div>
+  </div>
+</section>
+<!--Quote-->
+<section id="quote" class="bg-parlex">
+  <div class="parlex-back">
+    <div class="container">
+     <div class="row">
+	<div class="col-md-12">      <h2>“Dreams are extremely important. You can’t do it unless you imagine it.” <span>-George Lucas</span></h2></div>
+      </div>
+    </div>
+    <!--/.container--> 
+  </div>
+</section>
+
+<!--Skills-->
+<section id="skills" class="secPad white">
+  <div class="container">
+    <div class="heading "> 
+      <!-- Heading -->
+      <h2>My Skills</h2>
+      <p>When I'm not immersed in simulations, you'll probably find me experimenting with new coding projects or diving into the latest advancements in AI and computational modeling. </p>
+    </div>
+    <div class="row skillContainer">
+      <div class="col-md-4 skillBox">
+        <div id="diagram-id-1" class="diagram" data-percent="95.2%"></div>
+        <div class="chart-text">
+          <h4>Applied Physics & Materials Science</h4>
+          <p>Exp 8 years</p>
+        </div>
+      </div>
+      <div class="col-md-4 skillBox">
+        <div id="diagram-id-2" class="diagram" data-percent="75.2%"></div>
+        <div class="chart-text">
+          <h4>Fusion Energy Research</h4>
+          <p>Exp 8 years</p>
+        </div>
+      </div>
+      <div class="col-md-4 skillBox">
+        <div id="diagram-id-3" class="diagram" data-percent="85.6%"></div>
+        <div class="chart-text">
+          <h4>Database & Backend Developer</h4>
+          <p>Exp 5 years</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Computational Science Skills</h2>
+        <p class="mrgBtm20"> I am a computational science researcher with a strong background in modeling and simulation, specializing in computational techniques such as Kinetic Monte Carlo (KMC), Ab Initio (VASP), Machine Learning (ML), Finite Element Methods (FEM), and Molecular Dynamics (MD). With extensive experience in programming languages including Java, Python, PyTorch, JavaScript, and HTML, I develop and implement high-performance simulations to solve complex scientific and engineering problems. Passionate about computational research, I thrive at the intersection of physics, materials science, and software development. </p>
+      </div>
+      <div class="col-sm-6"> <br/>
+        <br/>
+        <br/>
+        <div class="row">
+          <div class="col-md-2 skilltitle"><b>KMC</b></div>
+          <div class="col-md-10">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"> <span class="sr-only">90% Complete</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 skilltitle"><i>Ab Initio</i></div>
+          <div class="col-md-10">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> <span class="sr-only">80% Complete</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 skilltitle"><b>FEM</b></div>
+          <div class="col-md-10">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"> <span class="sr-only">75% Complete</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 skilltitle"><b>MD</b></div>
+          <div class="col-md-10">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"> <span class="sr-only">75% Complete</span> </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 skilltitle"><b>ML</b></div>
+          <div class="col-md-10">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"> <span class="sr-only">75% Complete</span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Experience-->
+<section id="experience" class="secPad">
+<div class="container">
+<div class="heading"> 
+  <!-- Heading -->
+  <h2>Experience</h2>
+  <br/>
+  <h4>8 Years Experience!</h4>
+  <p>My experiences honed my expertise in computational modeling, algorithm development, and data-driven material analysis..</p>
+</div>
+<div class="row experience-details">
+  <div class="col-md-6">
+    <div class="col-md-5">
+      <div class="icon-block"><i class="fa fa-cogs"></i></div>
+      <div class="pull-left">
+        <h5>Computational Materials Science</h5>
+        <h4>Ph.D. Student</h4>
+        <span>2016 - 2022</span> </div>
+    </div>
+    <div class="col-md-7"> My research focused on fusion reactor materials, where I derived analytical expressions for diffusion-controlled reactions and validated these expressions through simulations.
+      My work also involved machine learning applications for predictive models for tungsten oxidation, Kinetics Monte Carlo models to simulate multi-layer tungsten oxidation, Finite Element Methods (FEM) in C++ and COMSOL to analyze mechanical responses in multiferroic devices. 
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="col-md-5">
+      <div class="icon-block"><i class="fa fa-laptop"></i></div>
+      <div class="pull-left">
+        <h5>Computer Simulations</h5>
+        <h4>Teaching Assistant in UCLA</h4>
+        <span>2017 - 2020</span> </div>
+    </div>
+    <div class="col-md-7"> 
+      For MSE 270: Computer Simulations of Materials at UCLA, I guided students in understanding computational modeling methods, including statistical mechanics, classical molecular dynamics, and Monte Carlo simulations. </div>
+  </div>
+</div>
+<div class="row experience-details">
+  <div class="col-md-6">
+    <div class="col-md-5">
+      <div class="icon-block"><i class="fa fa-send-o"></i></div>
+      <div class="pull-left">
+        <h5>Summer Schools & Intern</h5>
+        <h4>Attendee</h4>
+        <span>2018 - 2019</span> </div>
+    </div>
+    <div class="col-md-7">
+      I have attended prestigious summer schools and workshops, including the Modeling Experimentation Validation Summer School at 
+      <b>Oak Ridge National Laboratory</b> and the Dislocation Dynamics with Kinetic Monte Carlo program at <b>Los Alamos National Lab</b>.
+  </div>
+  </div>
+  <div class="col-md-6">
+    <div class="col-md-5">
+      <div class="icon-block"><i class="fa fa-calendar"></i></div>
+      <div class="pull-left">
+        <h5>Team Managment</h5>
+        <h4>Engineering Manager</h4>
+        <span>2016</span> </div>
+    </div>
+    <div class="col-md-7">As an Engineering Manager at Alpha Ring LLC, I played a key role in developing fusion reactor systems and optimizing vacuum cooling mechanisms.
+       I led efforts to enhance power input-output efficiency using LabVIEW. This experience strengthened my leadership, system engineering, and data-driven optimization skills in the field of fusion technology. </div>
+  </div>
+</div>
+</section>
+
+<!--Portfolio-->
+<section id="portfolio" class="page-section section appear clearfix secPad">
+  <div class="container">
+    <div class="heading"> 
+      <!-- Heading -->
+      <h2>Portfolio</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum erat et neque tincidunt volutpat. Cras eget augue id dui varius pretium. Cras posuere dolor risus. Pellentesque elementum ultricies quam, sit amet rhoncus nisl viverra in. Cras imperdiet nisi a euismod molestie. Ut a metus arcu. Pellentesque feugiat dictum erat.</p>
+    </div>
+    <div class="row">
+      <nav id="filter" class="col-md-12">
+        <ul>
+          <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
+          <li><a href="#" class="btn-theme btn-small" data-filter=".Academic">Academic</a></li>
+          <li><a href="#" class="btn-theme btn-small" data-filter=".Sports">Sports</a></li>
+          <li><a href="#" class="btn-theme btn-small" data-filter=".Food">Food</a></li>
+          <li><a href="#" class="btn-theme btn-small" data-filter=".Events">Events</a></li>
+
+        </ul>
+      </nav>
+      <div class="col-md-12">
+        <div class="row">
+          <div class="portfolio-items isotopeWrapper clearfix" id="3">
+            <article class="col-sm-4 isotopeItem Academic">
+              <div class="portfolio-item"> <img src="images/portfolio/img1.jpg" alt="" />
+                <div class="portfolio-desc align-center">
+                  <div class="folio-info"> <a href="images/portfolio/img1.jpg" class="fancybox">
+                    <h5>Doctoral Graduation</h5>
+                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                </div>
+              </div>
+            </article>
+            <article class="col-sm-4 isotopeItem Events">
+              <div class="portfolio-item"> <img src="images/portfolio/img2.jpg" alt="" />
+                <div class="portfolio-desc align-center">
+                  <div class="folio-info"> <a href="images/portfolio/img2.jpg" class="fancybox">
+                    <h5>Chinese New Year Celebration</h5>
+                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                </div>
+              </div>
+            </article>
+            <article class="col-sm-4 isotopeItem Sports">
+              <div class="portfolio-item"> <img src="images/portfolio/img3.jpg" alt="" />
+                <div class="portfolio-desc align-center">
+                  <div class="folio-info"> <a href="images/portfolio/img3.jpg" class="fancybox">
+                    <h5>I bike</h5>
+                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                </div>
+              </div>
+            </article>
+            <article class="col-sm-4 isotopeItem Events">
+              <div class="portfolio-item"> <img src="images/portfolio/img4.jpg" alt="" />
+                <div class="portfolio-desc align-center">
+                  <div class="folio-info"> <a href="images/portfolio/img4.jpg" class="fancybox">
+                    <h5>Diwali Celebration</h5>
+                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                </div>
+              </div>
+            </article>
+            <article class="col-sm-4 isotopeItem Sports">
+              <div class="portfolio-item"> <img src="images/portfolio/img5.jpg" alt="" />
+                <div class="portfolio-desc align-center">
+                  <div class="folio-info"> <a href="images/portfolio/img5.jpg" class="fancybox">
+                    <h5>Salt Lake</h5>
+                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                </div>
+              </div>
+            </article>
+            <article class="col-sm-4 isotopeItem Sports">
+              <div class="portfolio-item"> <img src="images/portfolio/img6.jpg" alt="" />
+                <div class="portfolio-desc align-center">
+                  <div class="folio-info"> <a href="images/portfolio/img6.jpg" class="fancybox">
+                    <h5>Rock Climbing</h5>
+                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                </div>
+              </div>
+            </article>
+            <article class="col-sm-4 isotopeItem Food">
+              <div class="portfolio-item"> <img src="images/portfolio/img7.jpg" alt="" />
+                <div class="portfolio-desc align-center">
+                  <div class="folio-info"> <a href="images/portfolio/img7.jpg" class="fancybox">
+                    <h5>Homemade Tiramisù</h5>
+                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                </div>
+              </div>
+            </article>
+            <article class="col-sm-4 isotopeItem Food">
+              <div class="portfolio-item"> <img src="images/portfolio/img8.jpg" alt="" />
+                <div class="portfolio-desc align-center">
+                  <div class="folio-info"> <a href="images/portfolio/img8.jpg" class="fancybox">
+                    <h5>And I love traditional Chinese Dim Sum</h5>
+                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                </div>
+              </div>
+            </article>
+            <article class="col-sm-4 isotopeItem Sports">
+              <div class="portfolio-item"> <img src="images/portfolio/img9.jpg" alt="" />
+                <div class="portfolio-desc align-center">
+                  <div class="folio-info"> <a href="images/portfolio/img9.jpg" class="fancybox">
+                    <h5>A Dog Lover</h5>
+                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                </div>
+              </div>
+            </article>
+            <article class="col-sm-4 isotopeItem Academic">
+              <div class="portfolio-item"> <img src="images/portfolio/img12.jpg" alt="" />
+                <div class="portfolio-desc align-center">
+                  <div class="folio-info"> <a href="images/portfolio/img12.jpg" class="fancybox">
+                    <h5>Doctoral Graduation</h5>
+                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                </div>
+              </div>
+            </article>
+            <article class="col-sm-4 isotopeItem Events">
+              <div class="portfolio-item"> <img src="images/portfolio/img11.jpg" alt="" />
+                <div class="portfolio-desc align-center">
+                  <div class="folio-info"> <a href="images/portfolio/img11.jpg" class="fancybox">
+                    <h5>2024 CES</h5>
+                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Contact -->
+<section id="contactUs" class="page-section secPad">
+  <div class="container">
+    <div class="row">
+      <div class="heading"> 
+        <!-- Heading -->
+        <h2>Let's Keep In Touch!</h2>
+        <p>Thank you for visiting out my profile. If you would like to get into contact with me, please fill out the form below.</p>
+      </div>
+    </div>
+    <div class="row mrgn30">
+      <form method="post" action="" id="contactfrm" role="form">
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address">
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group">
+            <label for="comments">Comments</label>
+            <textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
+          </div>
+          <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button>
+          <div class="result"></div>
+        </div>
+      </form>
+      <div class="col-sm-4">
+        <h4>Address:</h4>
+        <address>
+        Shu Huang<br>
+        5451 Great America Parkway, Suite 401, <br>
+        Santa Clara, CA USA 95054 <br>
+        </address>
+        <h4>Email:</h4>
+        <address>
+          shuhuangucla@gmail.com
+        <br>
+        </address>
+      </div>
+    </div>
+  </div>
+  <!--/.container--> 
+</section>
+
+<!--/.page-section-->
+<footer class="copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="social pull-left"> <a href="https://www.linkedin.com/in/shu-huang-la/"><i class="fa fa-linkedin"></i></a> <a href="https://scholar.google.com/citations?user=cAxkkRwAAAAJ&hl=en"><i class="fa fa-google"></i></a> <a href="https://www.facebook.com/shu.huang.3958"><i class="fa fa-facebook"></i></a> </div>
+      </div>
+    </div>
+    <!-- / .row --> 
+  </div>
+</footer>
+<a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a> 
+
+<!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]--> 
+<script src="js/modernizr-latest.js"></script> 
+<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script> 
+<script src="js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="js/jquery.isotope.min.js" type="text/javascript"></script> 
+<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
+<script src="js/jquery.nav.js" type="text/javascript"></script> 
+<script src="js/jquery.cslider.js" type="text/javascript"></script> 
+<script src="js/jquery.diagram.js"></script> 
+<script src="js/custom.js" type="text/javascript"></script> 
+<script src="js/owl-carousel/owl.carousel.js"></script>
 </body>
-
 </html>
