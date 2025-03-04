@@ -1,0 +1,5 @@
+cd shushujie.github.io
+touch .nojekyll  # Create the file
+git add .nojekyll
+git commit -m "Disable Jekyll processing"
+git push origin main  # or master if using master branch
